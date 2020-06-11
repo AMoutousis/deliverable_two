@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "j0HF37zQ1fHXFsRJy0VUTd9ejQVJnVlk0E90HGobqaT/KhekK6GnP/5izs3UFQoiAgQLixll4Fm3C6tXLVL/Ig==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\andon\\source\\repos\\Deliverable_Two\\Deliverable_Two\\Deliverable_Two.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\andon\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.2\\microsoft.aspnetcore.app.ref.3.1.2.nupkg.sha512"
+  ],
+  "logs": []
+}

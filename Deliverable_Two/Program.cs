@@ -29,29 +29,20 @@ namespace Deliverable_Two
             //must declare int array after input, otherwise will error
             int[] message = new int[uppercaseInput.Length];
 
-            //take uppercase string and convert it to ascii unicode using built in encoding library
-            byte[] asciiBytes = Encoding.ASCII.GetBytes(uppercaseInput);
-
-            //for the length of the uppercase string, add all array values together
-            foreach(byte b in asciiBytes)
-            {
-                checksum += b;
-            }
-
             //loop through user input, assign each letter to a char then convert the char into the numerical value of its place in the alphabet
             for (int i = 0; i < uppercaseInput.Length; i++)
             {
+                //convert each char in the string to unicode
                 char c = uppercaseInput[i];
+                checksum += c;
 
                 //convert individual letter to numerical place in alphabet
                 index = char.ToUpper(c) - numTransition;
 
+                //assign numerical value to int array declared outside of this for loop
                 message[i] = index;
             }
 
-            //return the original message
-            //DELETE BEFORE SUBMISSION
-            Console.WriteLine("Your message is " + uppercaseInput);
             //return the unicode value
             Console.WriteLine("Message checksum is " + checksum);
             //return the encoded value

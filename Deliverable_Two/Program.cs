@@ -22,8 +22,8 @@ namespace Deliverable_Two
 
 
             Console.WriteLine("Hello! Please write a message.");
-
             input = Console.ReadLine();
+
             string uppercaseInput = input.ToUpper();
 
             //must declare int array after input, otherwise will error
@@ -43,12 +43,11 @@ namespace Deliverable_Two
                 message[i] = index;
             }
 
-            //return the unicode value
-            Console.WriteLine("Message checksum is " + checksum);
             //return the encoded value
             Console.WriteLine("Your encoded message is " + string.Join("-", message));
-        
-        
+            //return the unicode value
+            Console.WriteLine("Message checksum is " + checksum);
+            
         }
     }
 }
